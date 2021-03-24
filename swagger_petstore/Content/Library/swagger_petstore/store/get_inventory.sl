@@ -29,7 +29,7 @@ flow:
             - auth_type: '${authentication_auth_type}'
             - headers: "${''}"
         publish:
-          - return_result: "${cs_json_query(return_result,'available') + ' still available.'}"
+          - return_result: "${cs_json_query(return_result,'pending') + ' still pending.'}"
           - error_message
           - status_code
           - return_code
